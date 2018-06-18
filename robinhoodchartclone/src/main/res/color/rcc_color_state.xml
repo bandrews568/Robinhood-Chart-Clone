@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:chart_theme="neutral" android:color="@color/rcc_neutral_color_state" android:background="@drawable/rcc_radio_button_background_neutral"/>
+    <item app:chart_theme="positive" android:color="@color/rcc_positive_color_state" android:background="@drawable/rcc_radio_button_background_positive"/>
+    <item app:chart_theme="negative" android:color="@color/rcc_negative_color_state" android:background="@drawable/rcc_radio_button_background_negative"/>
+</selector>

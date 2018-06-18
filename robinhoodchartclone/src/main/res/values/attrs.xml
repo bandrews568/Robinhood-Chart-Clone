@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RobinhoodChartClone">
+
+        <!-- ChartTheme -->
+        <attr name="chart_theme" format="enum">
+            <enum name="positive" value="0" />
+            <enum name="negative" value="1" />
+            <enum name="neutral" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>

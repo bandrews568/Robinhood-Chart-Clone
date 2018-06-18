@@ -1,0 +1,10 @@
+<resources>
+    <!-- Radio buttons -->
+    <string name="rb_day">1D</string>
+    <string name="rb_week">1W</string>
+    <string name="rb_month">1M</string>
+    <string name="rb_three_month">3M</string>
+    <string name="rb_year">1Y</string>
+    <string name="rb_all">All</string>
+    <string name="date_price_default">-</string>
+</resources>

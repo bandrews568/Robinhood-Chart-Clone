@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="android.support.constraint.ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.robinhood.spark.SparkView
+        android:id="@+id/spark_view_rcc"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_price_difference_spannable_rcc" />
+
+    <com.robinhood.ticker.TickerView
+        android:id="@+id/ticker_rcc"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_price_difference_spannable_rcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/date_price_default"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticker_rcc" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_rcc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spark_view_rcc">
+
+        <RadioButton
+            android:id="@+id/rb_1d_rcc"
+            style="@style/rcc_radio_button_style"
+            android:checked="true"
+            android:text="@string/rb_day" />
+
+        <RadioButton
+            android:id="@+id/rb_1w_rcc"
+            style="@style/rcc_radio_button_style"
+            android:text="@string/rb_week" />
+
+        <RadioButton
+            android:id="@+id/rb_1m_rcc"
+            style="@style/rcc_radio_button_style"
+            android:text="@string/rb_month" />
+
+        <RadioButton
+            android:id="@+id/rb_3m_rcc"
+            style="@style/rcc_radio_button_style"
+            android:text="@string/rb_three_month" />
+
+        <RadioButton
+            android:id="@+id/rb_1y_rcc"
+            style="@style/rcc_radio_button_style"
+            android:text="@string/rb_year" />
+
+        <RadioButton
+            android:id="@+id/rb_all_rcc"
+            style="@style/rcc_radio_button_style"
+            android:text="@string/rb_all" />
+
+    </RadioGroup>
+</merge>
