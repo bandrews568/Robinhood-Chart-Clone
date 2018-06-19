@@ -7,6 +7,7 @@ import github.bandrews568.robinhoodchartclone.TimePeriod
 import github.bandrews568.robinhoodchartclone.TimePeriodChangeListener
 import kotlinx.android.synthetic.main.activity_robinhood_chart_clone_sample.*
 import java.util.*
+import java.util.concurrent.TimeUnit
 
 class RobinhoodChartCloneSampleActivity : AppCompatActivity(), TimePeriodChangeListener {
 
@@ -41,10 +42,10 @@ class RobinhoodChartCloneSampleActivity : AppCompatActivity(), TimePeriodChangeL
         var epochTime = 1527804000L
 
         val timeIncrease = when (timePeriod) {
-            TimePeriod.DAY -> 1800 // Thirty minutes
-            TimePeriod.WEEK -> 14400 // Four hours
-            TimePeriod.MONTH, TimePeriod.THREE_MONTH -> 86400 // One day
-            TimePeriod.YEAR, TimePeriod.ALL -> 604800 // Week
+            TimePeriod.DAY -> TimeUnit.MINUTES.toSeconds(30)
+            TimePeriod.WEEK -> TimeUnit.HOURS.toSeconds(4)
+            TimePeriod.MONTH, TimePeriod.THREE_MONTH -> TimeUnit.DAYS.toSeconds(1)
+            TimePeriod.YEAR, TimePeriod.ALL -> TimeUnit.DAYS.toSeconds(7)
         }
 
         // Total amount of data points to generate for the TimePeriod

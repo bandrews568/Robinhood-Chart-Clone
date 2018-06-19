@@ -17,7 +17,7 @@ class SparkViewAdapter(private var dataPoints: List<DataPoint> = emptyList()) : 
 
     override fun getCount() = dataPoints.size
 
-    override fun getItem(index: Int): DataPoint = dataPoints[index]
+    override fun getItem(index: Int) = dataPoints[index]
 
     override fun getY(index: Int) = dataPoints[index].price
 
