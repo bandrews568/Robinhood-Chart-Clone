@@ -1,7 +1,9 @@
 # Robinhood Chart Clone
 Combines the [TickerView](https://github.com/robinhood/ticker) & [SparkView](https://github.com/robinhood/spark) libraries to mimic the functionality of the sparkline chart from the Robinhood stock trading application.
-
-(Images here)
+<div>
+<img align="left" src="robinhood_chart_clone_one.png" width="20%" height="20%"/>       
+<img src="robinhood_chart_clone_two.png"width="20%" height="20%"/>
+</div>
 
 ## Usage
 
