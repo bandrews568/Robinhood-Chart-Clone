@@ -49,7 +49,14 @@ robinhood_chart_clone.reset()
 ```
 
 ## Installation
-Coming soon
+Add the dependency to your build.gradle.
+
+```gradle
+dependencies {
+    implementation 'github.bandrews568.robinhoodchartclone:robinhoodchartclone:1.0.0'
+}
+```
+
 
 ## Libraries used
 
